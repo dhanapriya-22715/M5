@@ -1,4 +1,6 @@
-EX-21-POINTERS
+## EX-21-POINTERS
+## NAME : DHANAPPRIYA S
+## REGISTER NO : 212224230056
 # AIM:
 Write a C program to convert a 23.65 into 25 using pointer
 
@@ -9,9 +11,29 @@ Write a C program to convert a 23.65 into 25 using pointer
 4.	Print the modified value.
 
 ## PROGRAM:
+```
+#include <stdio.h>
+
+long long product(int n) {
+    static long long result = 1;
+    if (n > 0) {
+        result *= n;
+        product(n - 1);
+    }
+    return result;
+}
+
+int main() {
+    int n = 12;
+    printf("Product of first %d natural numbers is: %lld\n", n, product(n));
+    return 0;
+}
+
+```
 
 ## OUTPUT:
- 	
+
+  
 
 
 
